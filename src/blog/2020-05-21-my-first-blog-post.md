@@ -2,7 +2,7 @@
 title: My First Blog Post
 date: 2020-05-21T19:41:47.168Z
 description: This is my first blog post with Netlify CMS
-mainHeading: One to One Dog Grooming
+mainHeading: <b>One to One Dog Grooing</b>
 welcomeHeading: Welcome to Pups Parlour
 welcomeParagraph: Pups Parlour is a fully qualified and recognised professional
   dog grooming service that specialises in small dogs run by Samantha in the
