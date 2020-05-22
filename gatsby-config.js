@@ -8,6 +8,28 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1400,
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: `${__dirname}/static/img`,
+      },
+    },
+    `gatsby-plugin-styled-components`,
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -17,8 +39,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/content`,
+        name: `blog`,
+        path: `${__dirname}/src/blog`,
       },
     },
     `gatsby-transformer-sharp`,

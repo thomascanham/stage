@@ -1,0 +1,22 @@
+backend:
+  name: github
+  branch: master
+  repo: thomascanham/stage
+
+media_folder: static/img
+public_folder: /img
+
+collections: 
+  - name: "blog"
+    label: "Blog"
+    folder: "src/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: 
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Main Heading", name: "mainHeading", widget: "markdown" }
+      - { label: "Welcome Heading", name: "welcomeHeading", widget: "markdown" }
+      - { label: "Welcome Paragraph", name: "welcomeParagraph", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Hero Image", name: "heroImage", widget: "image" }
