@@ -10,6 +10,7 @@ welcomeParagraph: Pups Parlour is a fully qualified and recognised professional
   the care and attention that they deserve. The parlour promotes a calm and
   relaxing atmosphere for all dogs that visit, allowing them to be pampered to
   the highest standard by a skilled professional.
+heroImage: /img/img_8026.jpeg
 ---
 Afternoon, \
 \
