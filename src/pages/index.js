@@ -17,6 +17,7 @@ const ImgWrapper = styled.div`
 
 const IndexPage = ({ data }) => {
 
+  //there was an error here breaking the build process
   const {
     title,
     welcomeHeading,
