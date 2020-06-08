@@ -17,12 +17,18 @@ const ImgWrapper = styled.div`
 
 const IndexPage = ({ data }) => {
 
-  const { welcomeHeading, welcomeParagraph, mainHeading, description, heroImage } = data.markdownRemark.frontmatter;
-  console.log(heroImage)
+  const {
+    title,
+    welcomeHeading,
+    welcomeParagraph,
+    mainHeading,
+    description,
+    heroImage
+  } = data.markdownRemark.frontmatter;
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title={title} />
       <h1>{welcomeHeading}</h1>
       <h3 dangerouslySetInnerHTML={{ __html: mainHeading }}></h3>
       <p>{description}</p>
@@ -36,16 +42,14 @@ const IndexPage = ({ data }) => {
   )
 }
 
-export default IndexPage
-
 export const query = graphql`
  query homePage{
   markdownRemark {
     frontmatter {
+      title
       welcomeHeading
       welcomeParagraph
       mainHeading
-      description
       heroImage {
         childImageSharp {
           fluid (maxWidth: 1400) {
@@ -57,3 +61,5 @@ export const query = graphql`
   }
  }
 `
+
+export default IndexPage;

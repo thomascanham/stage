@@ -20,3 +20,12 @@ collections:
       - { label: "Welcome Paragraph", name: "welcomeParagraph", widget: "markdown" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Hero Image", name: "heroImage", widget: "image" }
+
+  - name: "comments"
+    label: "Comments"
+    folder: "src/comments"
+    create: true
+    slug: "{{year}}-{{name}}"
+    fields: 
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Comment", name: "comment", widget: "markdown"}

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Pups Parlour Dog Grooming`,
+    description: `A small independant one on one dog grooming parlour based in the heart of Leicestershire`,
+    author: `@tomcanham`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -41,6 +41,13 @@ module.exports = {
       options: {
         name: `blog`,
         path: `${__dirname}/src/blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `comments`,
+        path: `${__dirname}/src/comments`,
       },
     },
     `gatsby-transformer-sharp`,
