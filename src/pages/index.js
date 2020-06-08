@@ -22,7 +22,6 @@ const IndexPage = ({ data }) => {
     welcomeHeading,
     welcomeParagraph,
     mainHeading,
-    description,
     heroImage
   } = data.markdownRemark.frontmatter;
 
@@ -31,7 +30,6 @@ const IndexPage = ({ data }) => {
       <SEO title={title} />
       <h1>{welcomeHeading}</h1>
       <h3 dangerouslySetInnerHTML={{ __html: mainHeading }}></h3>
-      <p>{description}</p>
       <p>{welcomeParagraph}</p>
       <p>Now go build something great.</p>
       <ImgWrapper>
