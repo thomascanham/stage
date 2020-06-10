@@ -20,7 +20,7 @@ const Footer = () => (
     <Footing>
         <div className="footer-content">
             <h3>PPBACKEND.NETLIFY.APP</h3>
-            <p>Used as a dojo</p>
+            <p>Welcome to my dojo</p>
         </div>
 
     </Footing>
