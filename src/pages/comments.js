@@ -11,7 +11,11 @@ const UL = styled.ul`
 
     p { line-height: 170%; }
 
-    li { margin: 5rem 0; }
+    li { 
+        margin: 5rem 0;
+        padding: 3rem;
+        border: 1px solid rgba(0,0,0,0.2);
+    }
 
     li h3 { color: rebeccapurple; }
 
