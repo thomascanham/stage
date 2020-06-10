@@ -8,13 +8,27 @@ const ContactForm = styled.form`
         display: block;
     }
 
+    input {
+        padding: .5rem;
+    }
+
     fieldset {
         border: 0;
         display: inline-block;
         margin: 1rem;
     }
+
+    button {
+        border: 0;
+        padding: .5rem;
+        background-color: #f56000;
+        color: #f2f2f2;
+        text-align: center;
+        padding: .6rem 2rem;
+    }
 `;
 
+//handle the form
 function handleSubmit(event) {
     event.preventDefault();
     console.log(event.currentTarget);
@@ -27,7 +41,7 @@ const Contact = () => (
 
         <h2>Why not get in touch</h2>
 
-        <ContactForm onSubmit={handleSubmit} netlify>
+        <ContactForm onSubmit={handleSubmit} name="Contact Form" data-netlify="true">
             <fieldset>
                 <label htmlFor="firstName">First Name</label>
                 <input type="text" id="firstName" placeholder="Enter your first name" />
